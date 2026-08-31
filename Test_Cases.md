@@ -9,12 +9,13 @@ This document contains the functional positive, negative, and boundary-value tes
 | **TC-01 (Positive)** | Valid login execution | 1. Navigate to Login page.<br>2. Enter valid email.<br>3. Enter valid password.<br>4. Click Login button. | User logs in successfully and sees their account profile dashboard. | PASS |
 | **TC-02 (Negative)** | Login with incorrect password | 1. Navigate to Login page.<br>2. Enter valid email.<br>3. Enter an incorrect password.<br>4. Click Login button. | Login fails. System displays error message: "Incorrect password." | PASS |
 
-## 🔍 Module 2: Product Search & Filters
+## 🔍 Module 2: Search & Discovery (Streaming Platform Scenario)
 
 | Test Case ID | Test Scenario | Test Steps | Expected Result | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **TC-03 (Positive)** | Searching for a standard product | 1. Type "Wireless Headphones" in search bar.<br>2. Click search icon. | Page updates to display relevant results matching wireless headphones. | PASS |
-| **TC-04 (Negative)** | Searching for special characters | 1. Type "@#$%" in search bar.<br>2. Click search icon. | System handles request gracefully and displays: "No results found." | PASS |
+| **TC-03 (Positive)** | Searching for an exact movie title | 1. Click on the video search bar.<br>2. Type "Stranger Things".<br>3. Press the Enter key. | The grid updates instantly to show the "Stranger Things" show banner and episodes. | PASS |
+| **TC-04 (Negative)** | Handling completely blank spaces | 1. Click on the search bar.<br>2. Press the Spacebar 5 times.<br>3. Click the search magnifying glass. | System ignores the empty spaces and does not refresh or display an error page. | PASS |
+
 
 ## 🛒 Module 3: Shopping Cart
 
